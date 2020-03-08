@@ -10,7 +10,7 @@ class PeacemakrCli < Formula
   # depends_on "cmake" => :build
 
   def install
-  	bin.install "peacemakr-cli-macos"
+  	bin.install "peacemakr-cli"
   end
 
 end
