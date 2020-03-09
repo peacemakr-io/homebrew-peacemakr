@@ -13,10 +13,10 @@ class PeacemakrCli < Formula
   end 
 
   def install
-	  resource("peacemakr-core-crypto").stage do 
-      lib.install "lib/libpeacemakr-core-crypto-cpp.dylib"
-      lib.install "lib/libpeacemakr-core-crypto.dylib"
-    end
+#     resource("peacemakr-core-crypto").stage do 
+#       lib.install "lib/libpeacemakr-core-crypto-cpp.dylib"
+#       lib.install "lib/libpeacemakr-core-crypto.dylib"
+#     end
   	bin.install "peacemakr-cli"
   end
 
