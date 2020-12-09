@@ -28,4 +28,9 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Run peacemakr
-      run: peacemakr-cli || true
+      env:
+        PEACEMAKR_APIKEY: SQTCdQxcHqLciaWJ2nEQeAEnDb/i6LQjq0RZeqXwcGM=
+      run: |
+        time echo "hello secure world" | peacemakr-cli --action=encrypt | peacemakr-cli --action=decrypt
+        sleep 10
+        time echo "hello secure world" | peacemakr-cli --action=encrypt | peacemakr-cli --action=decrypt
