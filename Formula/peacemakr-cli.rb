@@ -8,8 +8,8 @@ class PeacemakrCli < Formula
   sha256 "21ec4bad2d23ce29ff730fc55f154473d1492c71caed5550725528ee980674aa"
 
   resource "peacemakr-core-crypto" do
-    url "https://github.com/peacemakr-io/peacemakr-core-crypto/releases/download/v0.2.1.alpha/should-be-removed-peacemakr-core-crypto-macos-x86_64.tar.gz"
-    sha256 "bec2d1eff8e15462f33a4b7aaa0aa1908b53861125a168b25f21d340f22efa71"
+    url "https://github.com/peacemakr-io/peacemakr-core-crypto/releases/download/v0.2.1-beta/peacemakr-core-crypto-macos-x86_64.tar.gz"
+    sha256 "fcb9c361b01484a6404941524c863a30ec3db752cc420178ff80e6ccd8c9cc45"
   end
 
   def install
