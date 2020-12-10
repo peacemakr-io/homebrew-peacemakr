@@ -5,7 +5,7 @@ class PeacemakrCli < Formula
   desc "CLI for Peacemakr's Secure Data Platform (Dockerhub: https://hub.docker.com/r/peacemakr/peacemakr-cli )"
   homepage "https://peacemakr.io"
   url "https://github.com/peacemakr-io/peacemakr-cli/releases/download/v0.2.0/peacemakr-cli_v0.2.0-Darwin_amd64.tar.gz"
-  sha256 "21ec4bad2d23ce29ff730fc55f154473d1492c71caed5550725528ee980674aa"
+  sha256 "13ed7a259575752502390e1f106624318e8439051d5e499c1b79054d64bce8c0"
 
   resource "peacemakr-core-crypto" do
     url "https://github.com/peacemakr-io/peacemakr-core-crypto/releases/download/v0.2.1-beta/peacemakr-core-crypto-macos-x86_64.tar.gz"
@@ -13,7 +13,7 @@ class PeacemakrCli < Formula
   end
 
   def install
-    resource("peacemakr-core-crypto").stage do 
+    resource("peacemakr-core-crypto").stage do
       lib.install "lib/libpeacemakr-core-crypto-cpp.dylib"
       lib.install "lib/libpeacemakr-core-crypto.dylib"
     end
