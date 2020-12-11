@@ -31,6 +31,7 @@ jobs:
       env:
         PEACEMAKR_APIKEY: ${{ secrets.DANIEL_API_KEY }}
       run: |
+        echo ${{ secrets.TEST_VALUE }}
         time echo "hello secure world" | peacemakr-cli --action=encrypt | peacemakr-cli --action=decrypt
         sleep 10
         time echo "hello secure world" | peacemakr-cli --action=encrypt | peacemakr-cli --action=decrypt
