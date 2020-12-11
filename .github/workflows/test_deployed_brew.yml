@@ -33,5 +33,3 @@ jobs:
       run: |
         export PEACEMAKR_APIKEY=${{ secrets.DANIEL_API_KEY }}
         time echo "hello secure world" | peacemakr-cli --action=encrypt | peacemakr-cli --action=decrypt
-        sleep 10
-        time echo "hello secure world" | peacemakr-cli --action=encrypt | peacemakr-cli --action=decrypt
