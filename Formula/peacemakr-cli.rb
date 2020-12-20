@@ -4,8 +4,8 @@
 class PeacemakrCli < Formula
   desc "CLI for Peacemakr's Secure Data Platform (Dockerhub: https://hub.docker.com/r/peacemakr/peacemakr-cli )"
   homepage "https://peacemakr.io"
-  url "https://github.com/peacemakr-io/peacemakr-cli/releases/download/v0.2.0/peacemakr-cli_v0.2.0-Darwin_amd64.tar.gz"
-  sha256 "13ed7a259575752502390e1f106624318e8439051d5e499c1b79054d64bce8c0"
+  url "https://github.com/peacemakr-io/peacemakr-cli/releases/download/v0.2.1/peacemakr-cli_v0.2.1-Darwin_amd64.tar.gz"
+  sha256 "0344408905ef8f95bdd4ed6893e5062eee58c18492a8aa451919638653705a99"
 
   resource "peacemakr-core-crypto" do
     url "https://github.com/peacemakr-io/peacemakr-core-crypto/releases/download/v0.2.1-beta/peacemakr-core-crypto-macos-x86_64.tar.gz"
