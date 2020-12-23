@@ -31,4 +31,4 @@ jobs:
       env:
         PEACEMAKR_APIKEY: SQTCdQxcHqLciaWJ2nEQeAEnDb/i6LQjq0RZeqXwcGM=
       run: |
-        time echo "hello secure world" | peacemakr-cli --action=encrypt | peacemakr-cli --action=decrypt
+        time echo "hello secure world" | peacemakr-cli -encrypt | peacemakr-cli -decrypt
