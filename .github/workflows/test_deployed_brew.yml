@@ -24,11 +24,11 @@ jobs:
     - name: download peacemakr-cli
       run: |
         brew tap peacemakr-io/peacemakr
-        brew install peacemakr-io/peacemakr/peacemakr-cli
+        brew install peacemakr-io/peacemakr/peacemakr
 
     # Runs a set of commands using the runners shell
     - name: Run peacemakr
       env:
         PEACEMAKR_APIKEY: SQTCdQxcHqLciaWJ2nEQeAEnDb/i6LQjq0RZeqXwcGM=
       run: |
-        time echo "hello secure world" | peacemakr-cli -encrypt | peacemakr-cli -decrypt
+        time echo "hello secure world" | peacemakr -encrypt | peacemakr -decrypt
