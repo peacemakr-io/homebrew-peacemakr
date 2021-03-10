@@ -21,7 +21,7 @@ jobs:
     steps:
 
     # Runs a single command using the runners shell
-    - name: download peacemakr-cli
+    - name: download peacemakr
       run: |
         brew tap peacemakr-io/peacemakr
         brew install peacemakr-io/peacemakr/peacemakr
